@@ -159,12 +159,13 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0.25rem 0 4rem 0.25rem;
+  margin: 0.25rem 5rem 4rem 0;
 }
 
 .info-detail {
   color: black;
-  width: 42%;
+  background-color: white;
+  width: 27%;
 }
 
 /*footer*/
@@ -178,4 +179,12 @@ a {
 
 .copyright {
   text-align: left;
+}
+
+@media  only screen and (min-width: 470px) and (max-width: 1024px) {
+  .item, .item-3 {
+    width: 47%;
+    height: 47%;
+    overflow: hidden;
+  }
 }

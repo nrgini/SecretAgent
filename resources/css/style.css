@@ -101,13 +101,12 @@ a {
 
  .container .products {
    display: flex;
-   justify-content: center;
  }
 
 .products {
   justify-content: space-between;
-  width: 95%;
-  margin: 3rem 5rem 3rem 1rem;
+  width: 98%;
+  margin: 3rem 0;
 }
 
 .item, .item-3 {
@@ -116,17 +115,17 @@ a {
   justify-content: flex-end;
   align-items: center;
   width: 30%;
+  height: 30%;
   border: 2px solid black;
-  border-bottom: 20px;
   background-color: white;
-  margin: 2rem;
+  margin-right: 2.8rem;
   padding: 2rem 0 0 0;
 }
 
  .item-title {
    background-color: black;
    text-align: center;
-   padding: 0.5rem;
+   padding: 1rem 0.5rem;
    width: 94%;
  }
 
@@ -139,13 +138,14 @@ a {
 .item-3 img {
   margin-bottom: 3rem;
   height: 5rem;
-  padding: 2rem 5rem;
+  padding: 2.75rem 5rem 2.25rem 5rem;
 }
 
 .info-title-container {
   display: flex;
   justify-content: space-between;
   max-height: 4rem;
+  width: 100%;;
 }
 
 .info-title {
@@ -157,11 +157,13 @@ a {
 .info-detail-container {
   display: flex;
   justify-content: space-between;
-  max-height: 2rem;
+  width: 100%;
+  margin: 0.25rem 0 4rem 0.25rem;
 }
 
 .info-detail {
   color: black;
+  width: 42%;
 }
 
 /*footer*/

@@ -83,14 +83,23 @@ a {
   line-height: 2.5rem;
 }
 
-.menu {
+.menu, .mobile-menu {
   display: flex;
   justify-content: center;
   background-color: firebrick;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .menu-items {
   margin: 0.75rem;
+}
+
+.mobile-menu-item {
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /*main content*/
@@ -182,9 +191,38 @@ a {
 }
 
 @media  only screen and (min-width: 470px) and (max-width: 1024px) {
-  .item, .item-3 {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .item {
     width: 47%;
     height: 47%;
-    overflow: hidden;
+  }
+
+  .item-3 {
+    display: none;
+  }
+
+  .item-title {
+    width: 97%;
+  }
+
+  .info-title-container {
+    width: 98%;
+  }
+
+  .info-title, .info-detail {
+    width: 30%;
   }
 }

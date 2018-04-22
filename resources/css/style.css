@@ -109,17 +109,14 @@ a {
   align-items: center;
 }
 
- .container .products {
-   display: flex;
- }
-
 .products {
+  display: flex;
   justify-content: space-between;
   width: 98%;
   margin: 3rem 0;
 }
 
-.item, .item-3 {
+.item, .item-2, .item-3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -139,7 +136,7 @@ a {
    width: 94%;
  }
 
-.item img {
+.item img, .item-2 img {
   margin-bottom: 2rem;
   height: 9rem;
   padding: 1rem 12rem;
@@ -190,9 +187,50 @@ a {
   text-align: left;
 }
 
-@media  only screen and (min-width: 470px) and (max-width: 1024px) {
+/*media rules*/
+@media only screen and (max-width: 470px) {
   h1 {
-    font-size: 1.75rem;
+      font-size: 1rem;
+    }
+
+  h2 {
+      font-size: 0.77rem;
+    }
+
+  .menu {
+    display: none;
+    }
+
+  .mobile-menu {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 98%;
+    padding: 0;
+  } */
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .announcement {
+    display: flex;
+    justify-content: flex-end;
+    /* width: 98%; */
+    background-color: black;
+    margin: 10rem 0;
+  }
+
+  .announcement-text {
+    margin: 1rem 2rem 1.5rem 1.5rem;
+    text-align: left;
+    padding: 1rem 2rem;
   }
 
   .menu {
@@ -206,6 +244,37 @@ a {
   }
 
   .item {
+    width: 90%;
+    padding: 2rem 0 0 0;
+  }
+
+  .item-2, .item-3 {
+    display: none;
+    }
+
+  .mobile-menu {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .menu {
+    display: none;
+    }
+
+  .mobile-menu {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .item, .item-2 {
     width: 47%;
     height: 47%;
   }
@@ -224,32 +293,5 @@ a {
 
   .info-title, .info-detail {
     width: 30%;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  h1 {
-    font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 0.77rem;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .main-banner {
-    
-  }
-
-  .announcement {
-    justify-content: flex-end;
-    margin: 18rem 0;
-  }
-
-  .announcement-text {
-    padding: 1rem 2rem;
   }
 }
